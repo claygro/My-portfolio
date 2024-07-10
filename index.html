@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="boy.jpg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/0342ab83c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" id="header-con">
+      <h1>Research</h1>
+      <nav class="nav-section">
+        <a href="#" class="active same" id="first">Home</a>
+        <a href="#about" class="nav-both same" id="second">About</a>
+        <a href="#work" class="nav-both same" id="third">Work & project</a>
+        <a href="#last">
+          <button class="nav-btn same">Hire</button>
+        </a>
+      </nav>
+    </header>
+    <div id="home-container">
+      <main class="scroll">
+        <section id="home">
+          <div class="home-right">
+            <h1 class="home-first">
+              Hi, I'm <span class="home-name">Research Dhamala</span>.
+            </h1>
+            <span class="home-second" id="element"></span>
+            <h4 class="home-third">
+              I have been learning frontend developer course from youtube.
+            </h4>
+          </div>
+          <div class="home-left">
+            <img src="boy.jpg" alt="boy" class="home-boy" />
+          </div>
+        </section>
+        <!-- icon section -->
+        <section class="icon-all">
+          <div class="icon-button">
+            <a href="#">
+              <i
+                class="fa-brands fa-github fa-2xl"
+                style="color: white"
+                id="icon"
+              ></i>
+            </a>
+          </div>
+          <div class="icon-button">
+            <a href="#">
+              <i
+                class="fa-brands fa-facebook fa-2xl"
+                style="color: #005eff"
+                id="icon"
+              ></i>
+            </a>
+          </div>
+          <div class="icon-button">
+            <a href="#">
+              <i
+                class="fa-brands fa-linkedin fa-2xl"
+                style="color: #005eff"
+                id="icon"
+              ></i>
+            </a>
+          </div>
+        </section>
+      </main>
+      <!-- about section -->
+      <br />
+      <section id="about">
+        <div class="about-img">
+          <img src="about-boy.png" alt="" class="about-boy" />
+        </div>
+        <h1 class="about-text">
+          Hi, I'm Research Dhamala. <br />
+          I have been learning frontend webdeveloper course from youtube. <br />
+          I have 1 years of experience
+        </h1>
+        <br /><br />
+      </section>
+      <!-- work section -->
+      <main class="all-work-section">
+        <section class="work" id="work">
+          <div class="work-text-all">
+            <h1 class="work-text">
+              I've done many project like calculator, <br />
+              weather app, rock paper and scissor ,stopwatch and <br />
+              digital clock. All project link is down below.
+            </h1>
+          </div>
+          <div class="work-boy-background">
+            <img src="work-boy.png" alt="" class="work-boy" />
+          </div>
+          <br /><br /><br /><br />
+        </section>
+        <!-- project link -->
+
+        <section class="project">
+          <h1 class="project-text">
+            These are the some project which I've talk earlier.
+          </h1>
+          <div class="project-link">
+            <a href="https://claygro.github.io/assignment-calculator/">
+              <button class="project-btn">calculator</button>
+            </a>
+            <a href=" https://claygro.github.io/stop-watch/">
+              <button class="project-btn">stopwatch</button>
+            </a>
+            <a href=" https://claygro.github.io/weather/">
+              <button class="project-btn">weather</button>
+            </a>
+            <a href=" https://claygro.github.io/sushi-theamed2/">
+              <button class="project-btn">Sushi theamed website</button>
+            </a>
+          </div>
+        </section>
+      </main>
+      <!-- hobbies section -->
+      <div class="right">
+        <section class="hobbies">
+          <div>
+            <h1 class="hobies-heading">Hobbies</h1>
+          </div>
+          <ul class="hobbies-text">
+            <li>Playing chess</li>
+            <li>Cycling</li>
+            <li>Coding</li>
+            <li>Drawing</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <section class="hire" id="last">
+      <form action="#home">
+        <div class="top">
+          <input
+            class="hire-last"
+            type="email"
+            placeholder="example@gmail.com"
+            required
+          />
+          <input
+            class="hire-last"
+            type="text"
+            placeholder="Phone number"
+            required
+          />
+        </div>
+        <a href="#" class="link">
+          <button class="hired-button">Submit</button>
+        </a>
+      </form>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Front-end developer", "video editor.", "&amp; Photo editor."],
+        typeSpeed: 90,
+      });
+    </script>
+  </body>
+</html>

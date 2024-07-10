@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+body {
+  background-color: #091f2f;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 30px;
+  background-color: #0c283c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  cursor: default;
+  font-size: 27px;
+  color: #ededed;
+  font-weight: 600;
+
+  font-size: 2rem;
+}
+.nav-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-section a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.nav-section a:hover {
+  color: #00abf0;
+}
+.nav-section .active {
+  color: #00abf0;
+}
+.nav-both {
+  color: white;
+}
+.nav-btn {
+  background: transparent;
+  border: 2px solid;
+  border-color: red orangered;
+  padding: 10px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  border-radius: 20px;
+}
+.nav-btn:hover,
+.nav-btn:active {
+  background-color: rgb(4, 75, 147);
+  border: 1px solid yellow, orange, red;
+}
+#home {
+  margin-top: 14rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.home-name {
+  color: plum;
+  font-size: 3rem;
+}
+#home-container {
+  padding-inline: 30px;
+}
+.home-first {
+  font-size: 40px;
+}
+.home-second {
+  font-size: 30px;
+  color: #00abf0;
+}
+.home-third {
+  font-size: 20px;
+}
+.home-right {
+  cursor: default;
+}
+.home-boy {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.home-boy:hover {
+  transform: scale(1.06);
+}
+.home-left {
+  background-color: white;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+}
+.icon-all {
+  display: flex;
+  gap: 30px;
+  margin-left: 5rem;
+}
+.icon-button {
+  padding: 15px 15px;
+  border-radius: 50%;
+  border: 3px solid #00abf0;
+  color: white;
+  cursor: pointer;
+}
+
+#about {
+  border-top: 2px solid white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-boy {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+.about-boy:hover {
+  transform: scale(1.05);
+}
+.about-img {
+  background-color: white;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  object-fit: contain;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.about-text {
+  color: yellow;
+}
+.work {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  border-top: 2px solid white;
+  margin-top: 30px;
+}
+.work-boy {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+.work-text {
+  color: plum;
+}
+.work-boy-background {
+  background-color: white;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  margin-top: 35px;
+  overflow: hidden;
+}
+.work-boy:hover {
+  transform: scale(1.03);
+}
+.project a {
+  text-decoration: none;
+}
+.project {
+  border-bottom: 2px solid white;
+}
+.project-text {
+  font-size: 30px;
+  color: paleturquoise;
+}
+.project-link {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+  margin-bottom: 30px;
+}
+.project-btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: palegreen;
+  color: rgb(64, 36, 64);
+}
+.project-btn:hover {
+  background-color: rgb(64, 36, 64);
+  color: palegreen;
+}
+.project-link {
+  margin-top: 30px;
+}
+.hire {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #0c283c;
+  padding: 40px 0;
+}
+.hire-last {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.hired-button {
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: orangered yellow;
+  background-color: purple;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: none;
+}
+.hobies-heading {
+  color: pink;
+}
+.hobbies {
+  background-color: #002b3c;
+  padding: 20px 50px;
+  margin-top: 40px;
+  cursor: default;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.hobbies-text li {
+  color: white;
+  margin-top: 30px;
+}
+
+@media all and (max-width: 1000px) {
+  #home-container {
+    padding-inline: 20px;
+  }
+  .home-first {
+    font-size: 25px;
+  }
+  .home-name {
+    font-size: 25px;
+  }
+  .home-boy {
+    width: 16rem;
+    height: 16rem;
+  }
+  .home-left {
+    width: 16rem;
+    height: 16rem;
+  }
+  .about-img {
+    width: 16rem;
+    height: 16rem;
+  }
+  .about-boy {
+    width: 16rem;
+    height: 16rem;
+  }
+  .about-text {
+    font-size: 19px;
+  }
+  #about {
+    display: flex;
+    flex-direction: row;
+  }
+  .work-text {
+    font-size: 19px;
+  }
+  .work-boy-background {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+@media all and (max-width: 600px) {
+  #home-container {
+    padding-inline: 10px;
+  }
+  .home-first {
+    font-size: 20px;
+  }
+  .home-second {
+    font-size: 20px;
+  }
+  .home-third {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .home-name {
+    font-size: 20px;
+  }
+  .home-boy {
+    width: 12rem;
+    height: 12rem;
+  }
+  .home-left {
+    width: 12rem;
+    height: 12rem;
+  }
+  .about-img {
+    width: 12rem;
+    height: 12rem;
+  }
+  .about-boy {
+    width: 12rem;
+    height: 12rem;
+  }
+  .about-text {
+    font-size: 15px;
+  }
+  #about {
+    display: flex;
+    flex-direction: row;
+  }
+  .work-text {
+    font-size: 15px;
+  }
+  .work-boy-background {
+    width: 12rem;
+    height: 12rem;
+  }
+  .project-text {
+    font-size: 20px;
+  }
+  .project-btn {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  .header {
+    display: block;
+  }
+  .header h1 {
+    font-size: 25px;
+    color: powderblue;
+    text-align: center;
+  }
+  .nav-section .same {
+    font-size: 15px;
+  }
+  .nav-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .nav-section .nav-btn {
+    padding: 5px 9px;
+  }
+}
+@media all and (max-width: 430px) {
+  .icon-button {
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+
+  #icon {
+    transform: scale(0.6);
+  }
+}
+@media all and (max-width: 325px) {
+  .hire-last {
+    padding: 8px 7px;
+  }
+}
