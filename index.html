@@ -19,16 +19,44 @@
   </head>
   <body>
     <header class="header" id="header-con">
-      <h1>Research</h1>
+      <main class="btn-bar">
+        <button class="menu-btn show" onclick="show()">
+          <i
+            class="fa-solid fa-bars fa-lg menu-bar-show"
+            style="color: #ffffff"
+          ></i>
+        </button>
+        <h1>Research</h1>
+      </main>
       <nav class="nav-section">
-        <a href="#" class="active same" id="first">Home</a>
-        <a href="#about" class="nav-both same" id="second">About</a>
-        <a href="#work" class="nav-both same" id="third">Work & project</a>
+        <a href="#" class="active same underline" id="first">Home</a>
+        <a href="#about" class="nav-both same underline" id="second">About</a>
+        <a href="#work" class="nav-both same underline" id="third"
+          >Work & project</a
+        >
         <a href="#last">
           <button class="nav-btn same">Hire</button>
         </a>
       </nav>
     </header>
+    <!-- menu bar -->
+    <nav class="menu-bar">
+      <section class="all-menu-bar">
+        <main class="background-menu">
+          <button class="menu-btn hide" onclick="hide()">
+            <i class="fa-solid fa-xmark" style="color: #ffffff"></i>
+          </button>
+
+          <a href="#" class="menu-anchor">Home</a>
+          <a href="#about" class="menu-anchor">About</a>
+          <a href="#work" class="menu-anchor">Work & project</a>
+          <a href="#last" class="menu-anchor">
+            <button class="nav-btn same">Hire</button>
+          </a>
+        </main>
+      </section>
+    </nav>
+    <!-- menu bar end -->
     <div id="home-container">
       <main class="scroll">
         <section id="home">
@@ -36,14 +64,16 @@
             <h1 class="home-first">
               Hi, I'm <span class="home-name">Research Dhamala</span>.
             </h1>
-            <span class="home-second" id="element"></span>
+            <span style="z-index: -1" class="home-second" id="element"></span>
             <h4 class="home-third">
               I have been learning frontend developer course from youtube.
             </h4>
           </div>
-          <div class="home-left">
-            <img src="boy.jpg" alt="boy" class="home-boy" />
-          </div>
+          <main class="all">
+            <div class="home-left">
+              <img src="boy.jpg" alt="boy" class="home-boy" />
+            </div>
+          </main>
         </section>
         <!-- icon section -->
         <section class="icon-all">
@@ -77,11 +107,12 @@
         </section>
       </main>
       <!-- about section -->
-      <br />
       <section id="about">
-        <div class="about-img">
-          <img src="about-boy.png" alt="" class="about-boy" />
-        </div>
+        <main class="all">
+          <div class="about-img">
+            <img src="about-boy.png" alt="" class="about-boy" />
+          </div>
+        </main>
         <h1 class="about-text">
           Hi, I'm Research Dhamala. <br />
           I have been learning frontend webdeveloper course from youtube. <br />
@@ -99,9 +130,11 @@
               digital clock. All project link is down below.
             </h1>
           </div>
-          <div class="work-boy-background">
-            <img src="work-boy.png" alt="" class="work-boy" />
-          </div>
+          <main class="all">
+            <div class="work-boy-background">
+              <img src="work-boy.png" alt="" class="work-boy" />
+            </div>
+          </main>
           <br /><br /><br /><br />
         </section>
         <!-- project link -->
@@ -170,9 +203,10 @@
 
     <!-- Setup and start animation! -->
     <script>
-      var typed = new Typed("#element", {
-        strings: ["Front-end developer", "video editor.", "&amp; Photo editor."],
-        typeSpeed: 90,
+      var type = new Typed("#element", {
+        strings: ["Front-end developer", "Video editor", "photo editor"],
+
+        typeSpeed: 100,
       });
     </script>
   </body>

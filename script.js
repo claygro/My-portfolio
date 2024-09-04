@@ -22,14 +22,7 @@ d.addEventListener("click", () => {
   document.querySelector("#second").style.color = "white";
   document.querySelector("#third").style.color = "white";
 });
-const show = () => {
-  document.querySelector(".menu-nav-section").style.display = "flex";
-  document.querySelector(".menu-btn").style.display = "none";
-};
-const hide = () => {
-  document.querySelector(".menu-nav-section").style.display = "none";
-  document.querySelector(".menu-btn").style.display = "flex";
-};
+
 // scroll change effect.
 let scroll = document.querySelector(".scroll");
 let scroll3 = document.querySelector("#about");
@@ -82,5 +75,10 @@ scroll7.addEventListener("mouseout", () => {
   document.querySelector("#third").style.color = "white";
   document.querySelector(".nav-btn").style.backgroundColor = "transparent";
 });
-
-// auto text write
+// for menu-bar
+function show() {
+  document.querySelector(".background-menu").style.display = "flex";
+}
+function hide() {
+  document.querySelector(".background-menu").style.display = "none";
+}
